@@ -23,8 +23,8 @@ font pango:JetBrainsMono Nerd Font 10
 exec --no-startup-id dex --autostart --environment i3
 
 # Start Picom
-#exec --no-startup-id picom
-#exec_always --no-startup-id picom  -b --config ~/.config/picom/picom.conf
+exec --no-startup-id picom
+exec_always --no-startup-id picom  -b --config ~/.config/picom/picom.conf
 
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
@@ -201,8 +201,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-exec --no-startup-id ~/.config/i3/nick.sh
+#exec --no-startup-id ~/.config/i3/nick.sh
 exec --no-startup-id /usr/lib/gsd-xsettings
+exec --no-startup-id nmcli con up id Colo
 
 # catppuccin-macchiato
 set $rosewater #f4dbd6
