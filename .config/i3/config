@@ -203,7 +203,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-exec  ~/.config/i3/nick.sh
+#exec  ~/.config/i3/nick.sh
 exec --no-startup-id /usr/lib/gsd-xsettings
 
 # catppuccin-macchiato
